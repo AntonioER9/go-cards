@@ -7,9 +7,7 @@ func main() {
 	// card = "Five of Diamonds" // Reassign the value of the variable
 	// card = newCard() // Call a function that returns a string
 
-	cards := deck{"Ace of Diamonds", newCard()}
-	cards = append(cards, "Six of Spades")
-
+	cards := newDeck()
 	cards.print()
 }
 
