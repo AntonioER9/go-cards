@@ -25,3 +25,7 @@ func (d deck) print() { // (d deck) is a receiver
 		fmt.Println(i, card)
 	}
 }
+
+func deal(d deck, handSize int) (deck, deck) { // Return two values of type deck
+	return d[:handSize], d[handSize:]
+}

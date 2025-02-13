@@ -8,7 +8,15 @@ func main() {
 	// card = newCard() // Call a function that returns a string
 
 	cards := newDeck()
-	cards.print()
+
+	hand, remainingCards := deal(cards, 5)
+
+	println("Hand of cards:")
+	hand.print()
+	println(" ")
+	println("Remaining cards:")
+	remainingCards.print()
+
 }
 
 func newCard() string {
