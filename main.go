@@ -7,15 +7,21 @@ func main() {
 	// card = "Five of Diamonds" // Reassign the value of the variable
 	// card = newCard() // Call a function that returns a string
 
+	// cards := newDeck()
+
+	// hand, remainingCards := deal(cards, 5)
+
+	// println("Hand of cards:")
+	// hand.print()
+	// println(" ")
+	// println("Remaining cards:")
+	// remainingCards.print()
+
+	// greeting := "Hi there!"
+	// fmt.Println([]byte(greeting)) // Convert a string to a slice of bytes
+
 	cards := newDeck()
-
-	hand, remainingCards := deal(cards, 5)
-
-	println("Hand of cards:")
-	hand.print()
-	println(" ")
-	println("Remaining cards:")
-	remainingCards.print()
+	cards.saveToFile("my_cards")
 
 }
 
