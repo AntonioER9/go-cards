@@ -49,4 +49,8 @@ func newDeckFromFile(filename string) deck {
 		fmt.Println("Error:", err)
 		os.Exit(1)
 	}
+
+	// string(bs) // Convert byte slice to string
+	s := strings.Split(string(bs), ",") // Convert string to slice of strings
+	return deck(s)                      // Convert slice of strings to deck
 }
